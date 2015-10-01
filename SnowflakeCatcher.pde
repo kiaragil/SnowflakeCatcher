@@ -37,7 +37,7 @@ class Snowflake{
   Snowflake(){
     x = (int)(Math.random()*301);
     y = (int)(Math.random()*301);
-    size = 3;
+    size = 5;
     isMoving = true;
   } //end constructor
 

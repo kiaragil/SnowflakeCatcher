@@ -65,7 +65,7 @@ class Snowflake{
 
   void move(){
     if (isMoving == true){
-      y += 1;
+      y += 3;
     }//end loop
 
   } //end move

@@ -2,7 +2,7 @@
 Snowflake [] snow;
 void setup(){
   background(0);
-  size (600,600);
+  size (300,300);
   snow = new Snowflake [500];
    for(int i = 0; i < snow.length; i++) {
     snow[i] = new Snowflake();
@@ -35,8 +35,8 @@ class Snowflake{
    int x,y,size;
    boolean isMoving;
   Snowflake(){
-    x = (int)(Math.random()*600);
-    y = (int)(Math.random()*600);
+    x = (int)(Math.random()*301);
+    y = (int)(Math.random()*301);
     size = 3;
     isMoving = true;
   } //end constructor
@@ -48,7 +48,7 @@ class Snowflake{
   } //end show
 
   void lookDown(){
-    if (y > 0 && y < 590) {
+    if (y > 0 && y < 290) {
       if(get(x,y+4) != color(0)){
         isMoving = false;
       }
@@ -71,9 +71,9 @@ class Snowflake{
   } //end move
 
   void wrap(){
-    if (y >= 599){
+    if (y >= 299){
       y = 0;
-      x = (int)(Math.random()*601);
+      x = (int)(Math.random()*299);
     } // end loop
 
   } //end wrap
